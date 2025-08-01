@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f8f8fb;
+  color: #292929;
+}
+header {
+  background: #2456A2;
+  color: white; padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px #0002;
+}
+header .claim {
+  font-style: italic;
+  font-size: 1.1em; margin-bottom: 1rem;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: white; text-decoration: none; margin: 0 1rem;
+  transition: border-bottom .2s;
+  padding-bottom: 0.2rem;
+}
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+main {
+  padding: 2rem 1rem 4rem 1rem; max-width: 1200px; margin: auto;
+}
+h2 { color: #2456A2; }
+.immo-grid {
+  display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;
+}
+.immo-card {
+  background: #fff; box-shadow: 0 2px 8px #bbc2d44c;
+  border-radius: 8px; padding: 1rem; width: 320px;
+}
+.immo-card img { width: 100%; border-radius: 6px; }
+.immo-card.sold {
+  opacity: 0.7;
+  position: relative;
+}
+.immo-card.sold::after {
+  content: "Verkauft";
+  color: #fff;
+  background: #2456A2bb;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.3em 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+form { margin: 2rem 0; }
+label { display: block; margin: 0.8rem 0 0.2rem; }
+input, textarea {
+  padding: 0.6rem; width: 100%;
+  border: 1px solid #ccc; border-radius: 4px;
+  font-family: inherit; font-size: 1em;
+}
+button {
+  margin-top: 1rem;
+  background: #2456A2; color: #fff;
+  border: none; padding: .8em 2em;
+  border-radius: 4px; font-size: 1em;
+  cursor: pointer; font-weight: bold;
+  transition: background .2s;
+}
+button:hover { background: #16355c; }
+
+footer {
+  background: #ececf0;
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 0.95em;
+  position: fixed;
+  width: 100%;
+  left: 0; bottom: 0;
+  box-shadow: 0 -2px 8px #0001;
+}
